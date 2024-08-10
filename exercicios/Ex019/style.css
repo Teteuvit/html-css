@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+#principal{
+    text-align: center;
+    background-color: #738FC0;
+}
+.curso{
+    background-color:  #8EB0EB;
+}
+.basico{
+    color: rgb(119, 173, 75);
+}
+.intermediario{
+    color: rgb(209, 206, 22);
+
+}
+.avancado{
+    color: red;
+}
+body{
+    background-color: #eee8df;
+}

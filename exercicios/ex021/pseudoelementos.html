@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos</title>
+    <style>
+        a{
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(0, 0, 0);
+        }
+        a:active{
+            color: aqua;
+        }
+        a:hover {
+        color: black;
+        text-decoration: underline;
+        }
+        .especial {
+            background-color: rgba(223, 245, 224, 0.596);
+        }
+        .especial::after{
+            content: ' ♛';
+
+        }
+        a::after{
+            content: ' ☠';
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Testando formatação em links</h1>
+    <ul>
+        <li><a href="https://ge.globo.com/futebol/times/fluminense/" class="especial" target="_blank">Página do Fluminense</a></li>
+        <li><a href="https://ge.globo.com/futebol/times/flamengo/" target="_blank">
+        Página do Flamengo
+        </a></li>
+        <li><a href="https://ge.globo.com/futebol/times/botafogo/" target="_blank">Página do Botafogo</a></li>
+        <li><a href="https://ge.globo.com/futebol/times/vasco/" target="_blank">Página do Vasco</a></li>
+    </ul>
+</body>
+</html>
