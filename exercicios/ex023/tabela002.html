@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th {
             border: 1px solid black;
@@ -21,6 +22,11 @@
             font-weight: bold;
             padding: 10px;
             background-color: rgb(235, 233, 231);
+        }
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color:rgb(148, 148, 148) ;
         }
         thead, tfoot {
             background-color: gray;
@@ -45,7 +51,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">Ppoluação</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
